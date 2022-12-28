@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+#move-area {
+  background-color: green;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+}
+
 #game-instructions {
   padding-top: 50px;
   text-align: center;
@@ -12,6 +19,6 @@
   width: 60px;
   height: 58px;
   position: relative;
-  top: 40vh;
-  left: 47vw;
+  top: 400px;
+  left: 360px;
 }
