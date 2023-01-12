@@ -1,4 +1,4 @@
-let moveArea = document.getElementById('move-area');
+let gameArea = document.getElementById('game-area');
 /*
 let gameInstructions = document.createElement('p');
 gameInstructions.id = 'game-instructions';
@@ -9,7 +9,7 @@ moveArea.appendChild(gameInstructions);
 let char = document.createElement('div');
 char.id = 'char';
 char.innerHTML = `<img src="char.png">`
-moveArea.appendChild(char);
+gameArea.appendChild(char);
 
 let charPosition = 380;
 
@@ -29,3 +29,14 @@ function moveChar(event) {
     }
   }
 }
+
+function createItem() {
+  let item = document.createElement('div');
+  item.id = 'item';
+  item.innerHTML = `<img src="carrot.png">`;
+  gameArea.appendChild(item);
+
+  document.getElementById('item').style.left = `${Math.random() * 756}px`;
+}
+
+createItem();
