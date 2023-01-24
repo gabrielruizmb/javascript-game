@@ -8,10 +8,10 @@ moveArea.appendChild(gameInstructions);
 */
 let char = document.createElement('div');
 char.id = 'char';
-char.innerHTML = `<img src="char.png">`
+char.innerHTML = `<img src="img/char.png">`
 gameArea.appendChild(char);
 
-let charPosition = 380;
+let charPosition = 360;
 let itemVerticalPosition = 55;
 let itemHorizontalPosition = 0;
 
@@ -39,11 +39,11 @@ function spawnItem() {
 }
 
 function moveItem() {
-  if (itemVerticalPosition > -355) {
+  if (itemVerticalPosition > -320) {
     itemVerticalPosition -= 5;
     document.getElementById('item').style.bottom = `${itemVerticalPosition}px`;
 
-    if (itemVerticalPosition == -355) {
+    if (itemVerticalPosition == -320) {
       itemVerticalPosition = 55;
       spawnItem();
     }
@@ -53,7 +53,7 @@ function moveItem() {
 function createItem() {
   let item = document.createElement('div');
   item.id = 'item';
-  item.innerHTML = `<img src="carrot.png">`;
+  item.innerHTML = `<img src="img/carrot.png">`;
   gameArea.appendChild(item);
 
   spawnItem();
