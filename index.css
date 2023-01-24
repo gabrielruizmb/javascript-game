@@ -3,10 +3,12 @@
   padding: 0;
 }
 
+body {}
+
 #game-area {
-  background-color: green;
-  width: 800px;
-  height: 600px;
+  width: 960px;
+  height: 476px;
+  background-image: url('img/background.jpg');
   margin: auto;
 }
 
@@ -14,7 +16,7 @@
   width: 60px;
   height: 58px;
   position: relative;
-  top: 400px;
+  top: 360px;
   left: 360px;
 }
 
